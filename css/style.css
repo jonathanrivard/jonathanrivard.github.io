@@ -1,0 +1,139 @@
+/* Setup */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background-color: white;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+/* Landing */
+.landing {
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-image-container {
+    display: flex;
+    background-color: lightblue;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing-image {
+    background-image: url('../imgs/lightbulbpicture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+}
+
+.landing-image-container-text {
+    color: dimgray;
+    margin: 2rem;
+    text-align: center;
+    border-top: 0.2rem solid gray;
+    padding-top: 1rem;
+}
+
+.landing-text-container {
+    background-color: gray;
+    height: 50%;
+    padding: 2rem;
+}
+
+.landing-text h1 {
+    color: lightblue;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.2rem solid lightblue;
+}
+
+.landing-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+}
+
+/* Projects */
+.projects {
+    background-color: #f4f4f4;
+    display: grid;
+}
+
+.project-header {
+    background-color: gray;
+    color: lightblue;
+    width: 80%;
+    border: 0.2rem solid lightblue;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Project Box */
+.project-boxes {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.project-box {
+    background-color: gray;
+    width: 80%;
+    border: 0.2rem solid lightblue;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.project-box h1{
+    color: lightblue;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.project-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-box p {
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.project-box a {
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    color: lightblue;
+    font-size: 2rem;
+    text-align: center;
+    border: 0.2rem solid lightblue;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 2rem auto;
+}
+
+/* Button Hovers */
+.invert-hover:hover {
+    background-color: lightblue;
+    color: gray;
+}
