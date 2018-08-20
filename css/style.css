@@ -91,7 +91,7 @@ ul {
 /* Project Box */
 .project-boxes {
     display: grid;
-    align-items: center;
+    align-items: top;
     justify-items: center;
     grid-template-columns: 100%;
 }
@@ -108,7 +108,19 @@ ul {
     color: lightblue;
     text-align: center;
     font-size: 3rem;
-    margin: 2rem 0;
+    margin-top: 2rem;
+}
+
+.project-box h2 {
+    text-align: center;
+    color: lightblue;
+    border: 0.2rem solid lightblue;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-box img {
