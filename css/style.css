@@ -2,8 +2,14 @@
 * {
     margin: 0;
     padding: 0;
+    --dark-gray: #5d5c61;
+    --light-gray: #8d9594;
+    --light-blue: #7395AE;
+    --dark-blue: #557A95;
+    --brown: #B1A296;
     --main-color: rgb(36, 36, 36);
     --second-color: rgb(240, 240, 240);
+    --third-color: rgb(113, 186, 238);
 }
 
 html {
@@ -16,14 +22,9 @@ ul {
     list-style-position: inside;
 }
 
-/* Body 
 body {
-    background-image: url(../imgs/tilebackground.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+    background-color: var(--second-color);
+}
 
 /* Landing */
 #landing {
@@ -89,4 +90,75 @@ body {
 #landing #about-me p {
     font-size: 1.5rem;
     margin: 0.5rem 1rem;
+}
+
+/* Spotlight */
+#spotlight {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    padding-bottom: 2rem;
+}
+
+/* Spotlight Header */
+#spotlight #spotlight-header {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+
+#spotlight #spotlight-header h1 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+/* Spotlight Project */
+#spotlight .project-box {
+    background-color: var(--second-color);
+    width: 80%;
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.2rem;
+    box-shadow: 3px 3px black;
+}
+
+#spotlight .project-box h1 {
+    font-size: 2.2rem;
+    border-bottom: solid var(--main-color) 0.2rem;
+    padding: 0.3rem;
+    width: 60%;
+    text-align: center;
+}
+
+#spotlight .project-box h2 {
+    font-size: 1.8rem;
+    border: solid var(--third-color) 0.2rem;
+    color: var(--third-color);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem;
+}
+
+#spotlight .project-box p {
+    font-size: 1.5rem;
+}
+
+#spotlight .project-box img {
+    width: 100%;
+    height: auto;
+}
+
+#spotlight .project-box button {
+    margin: 2rem;
+    width: 80%;
+    font-size: 3rem;
+    background-color: var(--third-color);
+    color: white;
 }
