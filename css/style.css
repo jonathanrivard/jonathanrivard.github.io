@@ -9,6 +9,7 @@
     --dark-blue: #557A95;
     --brown: #B1A296;
     --main-color: rgb(36, 36, 36);
+    --main-color-light: rgb(110, 110, 110);
     --second-color: rgb(240, 240, 240);
     --third-color: rgb(113, 186, 238);
     --third-color-dark: rgb(53, 156, 230);
@@ -26,6 +27,10 @@ ul {
 
 body {
     background-color: var(--second-color);
+}
+
+button:focus {
+    outline: 0;
 }
 
 /* Landing */
@@ -173,5 +178,135 @@ body {
 }
 
 #spotlight .project-box a:hover {
+    background-color: var(--third-color-dark);
+}
+
+/* Projects */
+#projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-color);
+}
+
+/* Projects Header inside of Projects */
+#projects #projects-header {
+    width: 100%;
+    height: auto;
+}
+
+#projects #projects-header h1{
+    font-size: 2.6rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Projects Categories inside of Projects */
+#projects-categories {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: solid var(--main-color) 0.2rem;
+}
+
+#projects-categories button {
+    margin: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--main-color-light);
+    color: white;
+    font-size: 2rem;
+}
+
+#projects-categories button:hover {
+    background-color: var(--main-color);
+}
+
+/* Projects Container */
+#projects-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+/* Project Box inside of Projects Containers */
+#projects-container .project-box {
+    background-color: var(--main-color);
+    width: 90%;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    color: white;
+}
+
+#projects-container .project-box h1 {
+    font-size: 2.2rem;
+    border-bottom: solid var(--main-color) 0.2rem;
+    padding: 0.3rem;
+    width: 80%;
+    text-align: center;
+}
+
+#projects-container .project-box h2 {
+    font-size: 1.8rem;
+    border: solid var(--third-color) 0.2rem;
+    color: var(--third-color);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem;
+}
+
+#projects-container .project-box img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0.2rem;
+    margin-top: 0rem;
+}
+
+#projects-container .project-box button {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    background-color: var(--second-color);
+    color: black;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+}
+
+#projects-container .project-box button:hover {
+    background-color: white;
+}
+
+/* Expand in Project Box inside of Projects Container */
+#projects-container .project-box .expand {
+    display: none;
+    flex-direction: column;
+}
+
+#projects-container .project-box .expand p {
+    font-size: 1.5rem;
+    width: 90%;
+    height: auto;
+}
+
+#projects-container .project-box .expand a {
+    margin: 2rem;
+    width: 80%;
+    font-size: 3rem;
+    background-color: var(--third-color);
+    color: white;
+    box-shadow: 0;
+    border-radius: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#projects-container .project-box .expand a:hover {
     background-color: var(--third-color-dark);
 }
