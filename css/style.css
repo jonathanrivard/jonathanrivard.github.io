@@ -145,7 +145,12 @@ button:focus {
     text-align: center;
 }
 
-#spotlight .project-box h2 {
+#spotlight .project-box .tags {
+    display: flex;
+    flex-direction: row;
+}
+
+#spotlight .project-box .tags h2 {
     font-size: 1.8rem;
     border: solid var(--third-color) 0.2rem;
     color: var(--third-color);
@@ -254,12 +259,22 @@ button:focus {
     text-align: center;
 }
 
-#projects-container .project-box h2 {
+#projects-container .project-box .tags {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem;
+    justify-content: center;
+}
+
+#projects-container .project-box .tags h2 {
     font-size: 1.8rem;
     border: solid var(--third-color) 0.2rem;
     color: var(--third-color);
     padding: 0.1rem 0.3rem;
-    margin: 0.5rem;
+    margin: 0rem 0.5rem;
 }
 
 #projects-container .project-box img {
@@ -287,6 +302,8 @@ button:focus {
 #projects-container .project-box .expand {
     display: none;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 #projects-container .project-box .expand p {
@@ -296,7 +313,7 @@ button:focus {
 }
 
 #projects-container .project-box .expand a {
-    margin: 2rem;
+    margin: 1rem;
     width: 80%;
     font-size: 3rem;
     background-color: var(--third-color);
