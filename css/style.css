@@ -16,6 +16,7 @@ ul {
     list-style-position: inside;
 }
 
+<<<<<<< HEAD
 /* Body 
 body {
     background-image: url(../imgs/tilebackground.jpg);
@@ -89,4 +90,183 @@ body {
 #landing #about-me p {
     font-size: 1.5rem;
     margin: 0.5rem 1rem;
+=======
+/* Landing */
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.landing-image-container {
+    display: flex;
+    background-color: lightblue;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.landing-image {
+    background-image: url('../imgs/lightbulbpicture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.landing-image-container-text {
+    color: dimgray;
+    margin: 2rem;
+    text-align: center;
+    border-top: 0.2rem solid gray;
+    padding-top: 1rem;
+}
+
+.landing-text-container {
+    background-color: gray;
+    height: 50%;
+    padding: 2rem;
+}
+
+.landing-text h1 {
+    color: lightblue;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.2rem solid lightblue;
+}
+
+.landing-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+}
+
+/* Projects */
+.projects {
+    background-color: #f4f4f4;
+    display: grid;
+}
+
+.project-header {
+    background-color: gray;
+    color: lightblue;
+    width: 80%;
+    border: 0.2rem solid lightblue;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Project Box */
+.project-boxes {
+    display: grid;
+    align-items: top;
+    justify-items: center;
+    grid-template-columns: 100%;
+}
+
+.project-box {
+    background-color: gray;
+    width: 80%;
+    border: 0.2rem solid lightblue;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.project-box h1{
+    color: lightblue;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.project-box h2 {
+    text-align: center;
+    color: lightblue;
+    border: 0.2rem solid lightblue;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-box p {
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.project-box a {
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    color: lightblue;
+    font-size: 2rem;
+    text-align: center;
+    border: 0.2rem solid lightblue;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 2rem auto;
+}
+
+/* Button Hovers */
+.invert-hover:hover {
+    background-color: lightblue;
+    color: gray;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px){
+    .landing {
+        flex-direction: row;
+    }
+
+    .landing-image-container {
+        width: 50%;
+        height: 100%;
+    }
+
+    .landing-text-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .project-boxes {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+>>>>>>> parent of 235a0e0... Deleted everything
 }
