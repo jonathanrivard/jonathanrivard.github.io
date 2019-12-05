@@ -66,7 +66,7 @@ button:focus {
 #landing #picture-and-quote h1 {
     color: white;
     margin: 1rem;
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: normal;
     text-align: center;
     border: solid var(--second-color);
@@ -97,6 +97,7 @@ button:focus {
 #landing #about-me p {
     font-size: 1.8rem;
     margin: 0.5rem 1rem;
+    width: 90%;
 }
 
 /* Spotlight */
@@ -119,7 +120,7 @@ button:focus {
 }
 
 #spotlight #spotlight-header h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: normal;
     color: white;
     text-align: center;
@@ -138,7 +139,7 @@ button:focus {
 }
 
 #spotlight .project-box h1 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     border-bottom: solid var(--main-color) 0.2rem;
     padding: 0.3rem;
     width: 80%;
@@ -166,7 +167,7 @@ button:focus {
 }
 
 #spotlight .project-box p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 90%;
 }
 
@@ -203,7 +204,7 @@ button:focus {
 }
 
 #projects #projects-header h1{
-    font-size: 2.6rem;
+    font-size: 3rem;
     text-align: center;
     margin-top: 1.5rem;
 }
@@ -252,7 +253,7 @@ button:focus {
 }
 
 #projects-container .project-box h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     border-bottom: solid var(--main-color) 0.2rem;
     padding: 0.3rem;
     width: 80%;
@@ -286,7 +287,7 @@ button:focus {
 
 #projects-container .project-box button {
     width: 100%;
-    height: auto;
+    height: 4rem;
     font-size: 2rem;
     background-color: var(--second-color);
     color: black;
@@ -307,9 +308,10 @@ button:focus {
 }
 
 #projects-container .project-box .expand p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 90%;
     height: auto;
+    margin: 0.5rem 0;
 }
 
 #projects-container .project-box .expand a {
