@@ -34,22 +34,23 @@ button:focus {
 }
 
 /* Landing */
-.landing {
+#landing {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
-.landing-image-container {
+/* Picture and Quote in Landing */
+#landing #picture-and-quote {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
     display: flex;
-    background-color: lightblue;
-    height: 50%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding-top: 3rem;
+    background-color: var(--main-color);
 }
 
 #landing #picture-and-quote #image {
@@ -58,78 +59,35 @@ button:focus {
     border-radius: 100%;
 }
 
-.landing-text-container {
-    background-color: gray;
-    height: 50%;
-    padding: 2rem;
-}
-
-.landing-text h1 {
-    color: lightblue;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 0.8rem;
-    border-bottom: 0.2rem solid lightblue;
-}
-
-.landing-text p {
-    font-size: 2rem;
-    line-height: 3rem;
+#landing #picture-and-quote h1 {
     color: white;
     margin: 1rem;
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
-    font-size: 2rem;
+    border: solid var(--second-color);
+    border-width: 0.2rem 0;
+    padding: 0.5rem;
 }
 
-/* Project Box */
-.project-boxes {
-    display: grid;
-    align-items: top;
-    justify-items: center;
-    grid-template-columns: 100%;
-}
-
-.project-box {
-    background-color: gray;
-    width: 80%;
-    border: 0.2rem solid lightblue;
-    border-radius: 1rem;
-    margin: 1rem;
-}
-
-.project-box h1{
-    color: lightblue;
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 2rem;
-}
-
-.project-box h2 {
-    text-align: center;
-    color: lightblue;
-    border: 0.2rem solid lightblue;
-    border-radius: 2rem;
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-box img {
-    display: block;
+/* About Me in Landing */ 
+#landing #about-me {
     width: 100%;
-    height: auto;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.project-box p {
-    color: white;
-    padding: 1rem;
-    font-size: 2rem;
+#landing #about-me h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
     margin: 1rem;
+    border-bottom: solid var(--main-color) 0.2rem;
+    width: 60%;
 }
 
 #landing #about-me p {
