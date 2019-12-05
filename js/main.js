@@ -28,6 +28,7 @@ for(var i = 0; i < moreButtons.length; i++){
                     this.parentElement.childNodes[x].style.display = "flex";
                 }
             }
+            this.parentElement.style.gridColumn = "1 / span2";
             this.innerHTML = "Show Less";
         }else {
             //Find and set the expand child to none
@@ -36,6 +37,7 @@ for(var i = 0; i < moreButtons.length; i++){
                     this.parentElement.childNodes[x].style.display = "none";
                 }
             }
+            this.parentElement.style.gridColumn = "auto";
             this.innerHTML = "Show More";
         }
     };
