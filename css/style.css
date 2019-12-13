@@ -187,7 +187,7 @@ button:focus {
 }
 
 #spotlight .project-box a {
-    margin: 2rem;
+    margin: 1rem;
     width: 80%;
     font-size: 3rem;
     background-color: var(--third-color);
@@ -271,8 +271,9 @@ button:focus {
     font-size: 3rem;
     border-bottom: solid var(--main-color) 0.2rem;
     padding: 0.3rem;
-    width: 80%;
+    width: 90%;
     text-align: center;
+    margin-top: 1rem;
 }
 
 #projects-container .project-box .tags {
