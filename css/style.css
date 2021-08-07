@@ -235,8 +235,8 @@ header {
 
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
   gap: 1rem;
 }
 
@@ -427,6 +427,11 @@ header {
     background-position: center;
     background-size: cover;
     color: white;
+  }
+
+  .interest-zero.tide {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tideapp.png);
   }
 
   .interest-one {
